@@ -37,7 +37,7 @@
 
       .light{
         width: 300px;
-        height: 300px;
+        height: auto;
         background-color: #629584;
         padding: 20px;
       }
@@ -71,13 +71,15 @@
       .trained{
         color: whitesmoke;
         font-family: Poppins;
-        font-size: x-large;
+        font-size: larger;
         margin: auto;
         border-spacing: 30px 5px;
+        border: solid whitesmoke;
+
       }
 
       p{
-        font-size: xx-large;
+        font-size: larger;
         padding: 0px; 
         color: whitesmoke;
       }
@@ -90,8 +92,12 @@
 
       .plainlink:hover{
         color: whitesmoke;
-        background-color: #387478;
-      }      
+        background-color: none;
+      }
+
+      .footer{
+        font-size: x-small;
+      }
 
     </style>
 </head>
@@ -116,8 +122,42 @@
       </div>
     </div>
 
+  
+
 
     <div class="middle">
+      <div class="light">
+        <img class="icon" src="./images/profile.png">
+        <h1>SDO Catanduanes Profile</h1>
+
+        <table class="trained">
+          <th>Elementary</th>
+          <th>Secondary</th>
+          <th>Integrated</th>
+          <th>Total Number of School</th>
+          <tr>
+            <td>232</td>
+            <td>34</td>
+            <td>10</td>
+            <td>268</td>
+          </tr>
+        </table>
+        <br>
+        <table class="trained">
+          <th>Teaching</th>
+          <th>Teaching-Related</th>
+          <th>Non-Teaching</th>
+          <th>Total Number of Employees</th>
+          <tr>
+            <td>3,900</td>
+            <td>220</td>
+            <td>207</td>
+            <td>4,327</td>
+          </tr>
+        </table>
+      </div>
+
+
       <div class="dark">
         <img class="icon" src="./images/icon-personnel.png">
         <h1>Number of Trained Personnel<br>FY 2024</h1>
@@ -133,7 +173,7 @@
           </tr>
         </table>
         <br>
-        <a href="https://depedctd.github.io/hrds-internal/" class="plainlink">See numbers by PPAs</a>
+        <a class="newlink" href="https://depedctd.github.io/hrds-internal/" class="plainlink">See numbers by PPAs</a>
       </div>
       
       <div class="light">
@@ -157,7 +197,7 @@
 
 </body>
 <br>
-<footer>DepEd Catanduanes SGOD-HRDS<br>
+<footer class="footer">DepEd Catanduanes SGOD-HRDS<br>
   San Roque, Virac, Catanduanes<br>
   ESU-2024 🍀
 </footer>
