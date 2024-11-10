@@ -84,15 +84,27 @@
         color: whitesmoke;
       }
 
-      .plainlink:link{
-        color: aquamarine;
-        text-decoration: none;
-        background-color: #387478;
+      .newlink:link{
+        color: red;
+        background-color: #629584;
       }
 
-      .plainlink:hover{
+      .newlink:hover{
         color: whitesmoke;
-        background-color: none;
+        background-color: #629584;
+      }
+
+
+      a{
+        box-shadow: inset 0 0 0 0 #54b3d6;
+        color: #54b3d6;
+        margin: 0 -.25rem;
+        padding: 0 .25rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+      }
+      a:hover {
+        box-shadow: inset auto 0 0 0 #54b3d6;
+        color: white;
       }
 
       .footer{
@@ -129,6 +141,9 @@
       <div class="light">
         <img class="icon" src="./images/profile.png">
         <h1>SDO Catanduanes Profile</h1>
+        <a class="newlink" href="https://depedctd.github.io/hrds-internal/">Materlist of Schools</a>
+        <br>
+        <br>   
 
         <table class="trained">
           <th>Elementary</th>
@@ -167,9 +182,9 @@
           <th>Actual</th>
           <th>Percentage</th>
           <tr>
-            <td>3,355</td>
-            <td>2,957</td>
-            <td>88.13%</td>
+            <td>2,834</td>
+            <td>2,517</td>
+            <td>88.81%</td>
           </tr>
         </table>
         <br>
